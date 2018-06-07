@@ -14,6 +14,7 @@ class CreateBoards < ActiveRecord::Migration[5.2]
       t.integer :st5id
       t.integer :deckid
       t.integer :graveyardid
+      t.string :clientid
 
       t.timestamps
     end

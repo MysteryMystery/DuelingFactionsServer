@@ -1,0 +1,2 @@
+class Spelltrapslot < ApplicationRecord
+end

@@ -5,6 +5,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+rails db:migrate
+
+rails db:seed
+
+rails s
+
 Things you may want to cover:
 
 * Ruby version
@@ -14,6 +20,7 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
+
 	rails db:seed
 
 * Database initialization

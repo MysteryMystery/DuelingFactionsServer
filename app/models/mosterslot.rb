@@ -1,0 +1,2 @@
+class Mosterslot < ApplicationRecord
+end

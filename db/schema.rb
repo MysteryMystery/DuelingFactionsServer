@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_06_142637) do
+ActiveRecord::Schema.define(version: 2018_06_07_093820) do
 
   create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "title"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2018_06_06_142637) do
     t.integer "st5id"
     t.integer "deckid"
     t.integer "graveyardid"
+    t.string "clientid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -58,6 +59,19 @@ ActiveRecord::Schema.define(version: 2018_06_06_142637) do
 
   create_table "graveyards", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.text "cardids"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mosterslots", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.boolean "has_changed_position"
+    t.boolean "has_attacked"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "spelltrapslots", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.boolean "has_been_set_this_turn"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
