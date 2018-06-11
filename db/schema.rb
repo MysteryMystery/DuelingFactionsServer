@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2018_06_07_093820) do
 
   create_table "clients", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "ip"
+    t.text "deckids"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -63,7 +64,7 @@ ActiveRecord::Schema.define(version: 2018_06_07_093820) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "mosterslots", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "monsterslots", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.boolean "has_changed_position"
     t.boolean "has_attacked"
     t.datetime "created_at", null: false

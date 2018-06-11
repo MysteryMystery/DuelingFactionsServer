@@ -1,6 +1,6 @@
-class CreateMosterslots < ActiveRecord::Migration[5.2]
+class CreateMonsterslots < ActiveRecord::Migration[5.2]
   def change
-    create_table :mosterslots do |t|
+    create_table :monsterslots do |t|
       t.boolean :has_changed_position
       t.boolean :has_attacked
 

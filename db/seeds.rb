@@ -10,3 +10,8 @@ end
 		ip: Faker::Internet.ip_v4_address
 	})
 end
+
+6.times do 
+	Deck.create({
+	})
+end
